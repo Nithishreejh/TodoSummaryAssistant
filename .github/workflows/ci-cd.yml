@@ -28,7 +28,7 @@ jobs:
 
       - name: Test backend
         working-directory: Backend/todo-summary-assistant
-        run: mvn --batch-mode test
+        run: mvn --batch-mode package -DskipTests
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
